@@ -1,0 +1,28 @@
+{
+  "name": "vercel-dotnet",
+  "version": "1.0.0",
+  "description": "Vercel Runtime for .NET support through self-contained runtimes. Supports .NET 6",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "todo"
+  },
+  "keywords": [
+    "vercel"
+  ],
+  "author": "Gabriel Enrico",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/build-utils": "^2.13.0",
+    "axios": "^0.25.0",
+    "shelljs": "^0.8.5",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "@types/shelljs": "^0.8.11"
+  }
+}
