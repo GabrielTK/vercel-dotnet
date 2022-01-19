@@ -47,7 +47,7 @@ export async function build({
   shell.exec(`${dotnet} add package Amazon.Lambda.RuntimeSupport`, {cwd: workPath});
 
   console.log('🐘 Building .NET project');
-  shell.exec(`${dotnet} publish -sc -c Release -o ${buildPath}`, {cwd: workPath});
+  shell.exec(`${dotnet} publish -sc -c Release -o ${buildPath} -p:PublishReadyToRun=true`, {cwd: workPath});
 
   // Collect user files, files creating during build (composer vendor)
   // and other files and prefix them with "user" (/var/task/user folder).
